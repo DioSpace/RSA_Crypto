@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9246087-807b-48ac-8762-fbb3b9386a19" name="Default Changelist" comment="" />
+    <list default="true" id="f9246087-807b-48ac-8762-fbb3b9386a19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSA_Crypto/com/my/RSAUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSA_Crypto/com/my/RSAUtil.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1cLu8Fm9rkht74kKwYrLqbxCq4N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,20 +44,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Base64_Crypto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -67,9 +87,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.Test" />
+      <module name="RSA_Crypto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.Test2" />
+      <module name="RSA_Crypto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.RSAChinese" />
       </list>
     </recent_temporary>
@@ -87,6 +135,18 @@
       <workItem from="1590320034967" duration="4172000" />
       <workItem from="1590326153467" duration="2155000" />
       <workItem from="1590328761476" duration="2578000" />
+      <workItem from="1590385942609" duration="6727000" />
+      <workItem from="1590504285545" duration="32000" />
+      <workItem from="1590505116425" duration="6060000" />
+      <workItem from="1590511706673" duration="541000" />
+      <workItem from="1590512559919" duration="751000" />
+      <workItem from="1590513323107" duration="15000" />
+      <workItem from="1590513462946" duration="104000" />
+      <workItem from="1590513655149" duration="42000" />
+      <workItem from="1590513709779" duration="521000" />
+      <workItem from="1590555913161" duration="116000" />
+      <workItem from="1590582010834" duration="786000" />
+      <workItem from="1590730995338" duration="42000" />
     </task>
     <servers />
   </component>
@@ -102,29 +162,33 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590320233992" />
-    <state x="619" y="180" key="FileChooserDialogImpl" timestamp="1590330214846">
+    <state x="619" y="180" key="FileChooserDialogImpl" timestamp="1590555961926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="619" y="180" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590330214846" />
-    <state width="1342" height="205" key="GridCell.Tab.0.bottom" timestamp="1590336377636">
+    <state x="619" y="180" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590555961926" />
+    <state width="1286" height="278" key="GridCell.Tab.0.bottom" timestamp="1590583114567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590336377636" />
-    <state width="1342" height="205" key="GridCell.Tab.0.center" timestamp="1590336377636">
+    <state width="1286" height="278" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590583114567" />
+    <state width="1286" height="278" key="GridCell.Tab.0.center" timestamp="1590583114567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590336377636" />
-    <state width="1342" height="205" key="GridCell.Tab.0.left" timestamp="1590336377636">
+    <state width="1286" height="278" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590583114567" />
+    <state width="1286" height="278" key="GridCell.Tab.0.left" timestamp="1590583114566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590336377636" />
-    <state width="1342" height="205" key="GridCell.Tab.0.right" timestamp="1590336377636">
+    <state width="1286" height="278" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590583114566" />
+    <state width="1286" height="278" key="GridCell.Tab.0.right" timestamp="1590583114567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590336377636" />
-    <state x="319" y="0" key="SettingsEditor" timestamp="1590326235754">
+    <state width="1286" height="278" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590583114567" />
+    <state x="319" y="0" key="SettingsEditor" timestamp="1590512239642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="319" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590326235754" />
+    <state x="319" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590512239642" />
+    <state x="174" y="13" key="new project wizard" timestamp="1590514139248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="174" y="13" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1590514139248" />
   </component>
 </project>
