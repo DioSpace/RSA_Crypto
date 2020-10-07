@@ -25,6 +25,13 @@ public class RSAUtil {
         return byte2Base64(bytes);
     }
 
+    //获取公钥(转化为16进制字符串)
+    public static String getPublicKeyHexString(KeyPair keyPair){
+        PublicKey publicKey = keyPair.getPublic();
+        byte[] bytes = publicKey.getEncoded();
+        return byteArrayToHexString(bytes);
+    }
+
     //获取私钥(Base64编码)
     public static String getPrivateKey(KeyPair keyPair) {
         PrivateKey privateKey = keyPair.getPrivate();
@@ -52,7 +59,7 @@ public class RSAUtil {
 
     //公钥加密
     public static byte[] publicEncrypt(byte[] content, PublicKey publicKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("RSA");
+        Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
         cipher.init(Cipher.ENCRYPT_MODE, publicKey);
         byte[] bytes = cipher.doFinal(content);
         return bytes;
@@ -60,7 +67,7 @@ public class RSAUtil {
 
     //私钥解密
     public static byte[] privateDecrypt(byte[] content, PrivateKey privateKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("RSA");
+        Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
         cipher.init(Cipher.DECRYPT_MODE, privateKey);
         byte[] bytes = cipher.doFinal(content);
         return bytes;
@@ -76,5 +83,14 @@ public class RSAUtil {
     public static byte[] base642Byte(String base64Key) throws IOException {
         BASE64Decoder decoder = new BASE64Decoder();
         return decoder.decodeBuffer(base64Key);
+    }
+
+    //byte[] 转16进制
+    public static String byteArrayToHexString(byte[] bArr) {
+        StringBuffer stringBuffer = new StringBuffer();
+        for (byte b : bArr) {
+            stringBuffer.append(Integer.toString((b & 255) + 256, 16).substring(1));
+        }
+        return stringBuffer.toString();
     }
 }

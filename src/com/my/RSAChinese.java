@@ -114,7 +114,7 @@ public class RSAChinese {
             System.out.println("key : \n" + key);
         }
         System.out.println(str.length);
-        String clearText = "123abc测试";
+        String clearText = "text123456";
         String secretText = rsa.encrypt(clearText, str[0], str[1]);
         System.out.println("明文是：" + clearText);
         System.out.println("密文是：" + secretText);

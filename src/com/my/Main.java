@@ -15,9 +15,12 @@ public class Main {
             String privateKeyStr = RSAUtil.getPrivateKey(keyPair);
             System.out.println("RSA公钥Base64编码:\n" + publicKeyStr);
             System.out.println("RSA私钥Base64编码:\n" + privateKeyStr);
+            String publicKeyHexStr = RSAUtil.getPublicKeyHexString(keyPair);
+            System.out.println("RSA公钥16进制:\n" + publicKeyHexStr);
+            System.out.println("length:" + publicKeyHexStr.length());
 
             //=================客户端=================
-            String message = "This is a test, I am Dio!";
+            String message = "text123456";
             //将Base64编码后的公钥转换成PublicKey对象
             PublicKey publicKey = RSAUtil.string2PublicKey(publicKeyStr);
             //用公钥加密
@@ -25,6 +28,9 @@ public class Main {
             //加密后的内容Base64编码
             String byte2Base64 = RSAUtil.byte2Base64(publicEncrypt);
             System.out.println("公钥加密并Base64编码的结果：\n" + byte2Base64);
+            //加密后的内容 转16进制
+            String byte2HexString = RSAUtil.byteArrayToHexString(publicEncrypt);
+            System.out.println("公钥加密并转换成16进制字符串的结果：\n" + byte2HexString);
 
 
             //##############    网络上传输的内容有Base64编码后的公钥 和 Base64编码后的公钥加密的内容     #################
